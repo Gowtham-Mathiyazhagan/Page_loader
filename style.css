@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(58, 239, 239);
+  position: relative; 
+  font-size: large;
+}
+#container{
+    position: absolute;
+    top: 50%;
+     left: 50%;
+    transform: translate(-50%,-50%);
+}
+#spiner{
+    height: 50px;
+    width: 50px;
+    border: solid 5px black;
+    border-top:solid 5px white;
+    border-radius: 50%;
+    margin-left: 45px;
+    transition-property:transform;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
